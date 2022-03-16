@@ -26,7 +26,7 @@ div.thai-alphabetic-list ol { list-style-type: thai-alphabetic; }
 .indent p:not(:first-of-type) { text-indent: 2em; } /* ย่อหน้าทั้งหมดยกเว้น <p> แรกที่เป็นคำว่า "ตัวอย่าง" */
 
 /*h2 { border-bottom: 1px solid currentColor; }*/
-th:empty { visibility: hidden; }
+.table_no_header th:empty { display: none; }
 th, td { border: none !important; }
 
 .poem { position: relative; } /* ทำให้บทกวีทั้งหมดเป็นก้อนสี่เหลี่ยม ลอยอยู่กลางหน้า */
