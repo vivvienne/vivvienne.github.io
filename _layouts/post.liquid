@@ -13,7 +13,11 @@ layout: default
     </div>
   </header>
 
-  <section class="post-content">
+  {% if page.bootstrap %}
+    <section class="post-content indent-paragraph">
+  {% else %}
+    <section class="post-content">
+  {% endif %}
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
