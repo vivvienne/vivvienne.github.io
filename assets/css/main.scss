@@ -31,7 +31,7 @@ th, td { border: none !important; }
 .poem { position: relative; } /* ทำให้บทกวีทั้งหมดเป็นก้อนสี่เหลี่ยม ลอยอยู่กลางหน้า */
 .wak { display: inline; position: absolute; } /* ใช้บรรทัดนี้ถ้าต้องการให้บรรทัดละ 2 วรรค */
 .wak:nth-child(1) { left: 0; } /* ขอบซ้ายของวรรคซ้ายของแต่ละบาท */
-.wak:nth-child(2) { left: max(8em, 25%); } /* ขอบซ้ายของวรรคขวาของแต่ละบาท; ช่องว่างระหว่างวรรคขยายได้เล็กน้อยตาม viewport ที่ใหญ่ขึ้น */
+.wak:nth-child(2) { left: 25%; } /* ขอบซ้ายของวรรคขวาของแต่ละบาท; ช่องว่างระหว่างวรรคขยายได้เล็กน้อยตาม viewport ที่ใหญ่ขึ้น */
 /*.wak { display: block; } .bot br { display: none; } /* ใช้บรรทัดนี้ถ้าต้องการให้บรรทัดละวรรค */
 .stanza .line:first-of-type .wak:first-of-type { text-indent: 1em; } /* ย่อหน้าวรรคแรกสุดของบท */
 /*.markdown-preview > p { text-align: justify; }
