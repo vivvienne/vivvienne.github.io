@@ -43,3 +43,5 @@ div.thai-alphabetic-list ol { list-style-type: thai-alphabetic; }
 h2, h3 { text-align: center; }*/
 .poem.first .stanza .line:first-of-type .wak:first-of-type::before { content: '๏'; margin-right: 1.5em; }
 .poem.last .stanza .line:last-of-type .wak:last-of-type::after { content: '๚'; margin-left: 1.5em; }
+.poem p { margin: 0; }
+.poem * { line-height: 2.25; }
