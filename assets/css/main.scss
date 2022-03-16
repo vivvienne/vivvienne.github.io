@@ -10,8 +10,9 @@
 	suffix: ') ';
 }
 
-body { font-family: 'Noto Sans Light','Noto Sans CJK JP Light','CutiaORN' !important; font-size: 24px !important; line-height: 1.8; }
+body { font-family: 'Noto Sans Light','Noto Sans CJK JP Light','CutiaORN' !important; font-size: 24px !important; }
 .indent-paragraph > p { text-indent: 2em; }
+p, ol, ul, dl, .math-display { line-height: 2; }
 div.thai-numeral-list ol { list-style-type: thai; }
 div.thai-alphabetic-list ol { list-style-type: thai-alphabetic; }
 .diff { text-decoration: underline currentColor wavy 1px; text-underline-offset: 0.1em; }
