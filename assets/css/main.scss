@@ -28,7 +28,9 @@ th, td { border: none !important; }
 blockquote { padding: 0.1em 1em !important; }
 
 div.thai-numeral-list ol { list-style-type: thai; }
-div.thai-alphabetic-list ol { list-style-type: thai-alphabetic; }
+div.thai-alphabetic-parentheses-list ol { list-style-type: thai-alphabetic-parentheses; }
+div.thai-numeric-parentheses-list ol { list-style-type: thai-numeric-parentheses; }
+
 .diff { text-decoration: underline currentColor wavy 1px; text-underline-offset: 0.1em; }
 .ex-header { font-size: 0.8em; }
 .big { font-size: 2em; }
