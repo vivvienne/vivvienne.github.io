@@ -3,9 +3,15 @@
 
 @import "type-on-strap";
 
-@counter-style thai-alphabetic {
+@counter-style thai-alphabetic-parentheses {
 	system: alphabetic;
 	symbols: '\E01' '\E02' '\E04' '\E06' '\E07' '\E08' '\E09' '\E0A' '\E0B' '\E0C' '\E0D' '\E0E' '\E0F' '\E10' '\E11' '\E12' '\E13' '\E14' '\E15' '\E16' '\E17' '\E18' '\E19' '\E1A' '\E1B' '\E1C' '\E1D' '\E1E' '\E1F' '\E20' '\E21' '\E22' '\E23' '\E25' '\E27' '\E28' '\E29' '\E2A' '\E2B' '\E2C' '\E2D' '\E2E'; /* symbols: 'ก' 'ข' 'ค' 'ฆ' 'ง' 'จ' 'ฉ' 'ช' 'ซ' 'ฌ' 'ญ' 'ฎ' 'ฏ' 'ฐ' 'ฑ' 'ฒ' 'ณ' 'ด' 'ต' 'ถ' 'ท' 'ธ' 'น' 'บ' 'ป' 'ผ' 'ฝ' 'พ' 'ฟ' 'ภ' 'ม' 'ย' 'ร' 'ล' 'ว' 'ศ' 'ษ' 'ส' 'ห' 'ฬ' 'อ' 'ฮ'; */
+	prefix: '(';
+	suffix: ') ';
+	}
+@counter-style thai-numeric-parentheses {
+	system: numeric;
+	symbols: '๐' '๑' '๒' '๓' '๔' '๕' '๖' '๗' '๘' '๙';
 	prefix: '(';
 	suffix: ') ';
 }
@@ -28,7 +34,7 @@ div.thai-alphabetic-list ol { list-style-type: thai-alphabetic; }
 .big { font-size: 2em; }
 .source-big { font-size: 1em; } /* ตรงที่ต้นฉบับทำตัวใหญ่ แต่ render แบบปัจจุบันไม่ใหญ่ก็ได้ */
 .underline { text-decoration: underline; text-underline-offset: 0.1em; }
-.title-center { text-align: center; }
+.title-center, .text-center { text-align: center; }
 .signature-text { text-align: right; }
 .big-space { padding: 0 1.2em; }
 .indent p:not(:first-of-type) { text-indent: 2em; } /* ย่อหน้าทั้งหมดยกเว้น <p> แรกที่เป็นคำว่า "ตัวอย่าง" */
