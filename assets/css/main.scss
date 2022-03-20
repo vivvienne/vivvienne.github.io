@@ -26,6 +26,7 @@ table { margin: 0 !important; }
 th, td { border: none !important; }
 
 blockquote { padding: 0.1em 1em !important; }
+li blockquote p { display: block; }
 
 div.thai-numeral-list ol { list-style-type: thai; }
 div.thai-alphabetic-parentheses-list ol { list-style-type: thai-alphabetic-parentheses; }
