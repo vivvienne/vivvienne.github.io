@@ -27,6 +27,7 @@ th, td { border: none !important; }
 
 blockquote { padding: 0.1em 1em !important; }
 li blockquote p { display: block; }
+blockquote ol { margin-left: 3em; }
 
 div.thai-numeral-list ol { list-style-type: thai; }
 div.thai-alphabetic-parentheses-list ol { list-style-type: thai-alphabetic-parentheses; }
@@ -37,7 +38,7 @@ div.thai-numeric-parentheses-list ol { list-style-type: thai-numeric-parentheses
 .big { font-size: 2em; }
 .source-big { font-size: 1em; } /* ตรงที่ต้นฉบับทำตัวใหญ่ แต่ render แบบปัจจุบันไม่ใหญ่ก็ได้ */
 .underline { text-decoration: underline; text-underline-offset: 0.1em; }
-.title-center, .text-center { text-align: center; }
+.title-center, .text-center { text-align: center; margin-bottom: 1em; }
 .signature-text { text-align: right; }
 .big-space { padding: 0 1.2em; }
 .indent p:not(:first-of-type) { text-indent: 2em; } /* ย่อหน้าทั้งหมดยกเว้น <p> แรกที่เป็นคำว่า "ตัวอย่าง" */
