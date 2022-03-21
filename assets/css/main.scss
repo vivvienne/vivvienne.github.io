@@ -30,7 +30,7 @@ li blockquote p { display: block; }
 blockquote ol { margin-left: 3em; }
 hr { width: 30%; margin-left: 35%; }
 
-div.thai-numeral-list ol { list-style-type: thai; }
+ol.thai-numeral-list { list-style-type: thai; }
 ol.thai-alphabetic-parentheses-list { list-style-type: thai-alphabetic-parentheses; }
 ol.thai-numeric-parentheses-list { list-style-type: thai-numeric-parentheses; }
 ol.inline { display: inline-block; vertical-align: middle;}
