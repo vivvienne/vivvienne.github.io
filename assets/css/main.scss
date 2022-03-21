@@ -16,7 +16,11 @@
 	suffix: ') ';
 }
 
-body { font-family: 'Noto Sans Light','Noto Sans CJK JP Light','CutiaORN' !important; font-size: 24px !important; }
+:root {
+	--font-display-new-schoolbook: 'Noto Sans Light','Noto Sans CJK JP Light','CutiaORN';
+}
+
+body { font-family: var(--font-display-new-schoolbook) !important; font-size: 24px !important; }
 .indent-paragraph > p { text-indent: 2em; }
 p, ol, ul, dl, .math-display { line-height: 2; }
 
@@ -44,6 +48,7 @@ ol.inline { display: inline-block; vertical-align: middle;}
 .signature-text { text-align: right; }
 .big-space { padding: 0 1.2em; }
 .indent p:not(:first-of-type) { text-indent: 2em; } /* ย่อหน้าทั้งหมดยกเว้น <p> แรกที่เป็นคำว่า "ตัวอย่าง" */
+.math-as-text .katex { font: normal 1em var(--font-display-new-schoolbook); }
 
 .poem { position: relative; } /* ทำให้บทกวีทั้งหมดเป็นก้อนสี่เหลี่ยม ลอยอยู่กลางหน้า */
 .wak { display: inline; position: absolute; } /* ใช้บรรทัดนี้ถ้าต้องการให้บรรทัดละ 2 วรรค */
