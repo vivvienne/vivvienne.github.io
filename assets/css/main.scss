@@ -34,6 +34,9 @@ div.thai-numeral-list ol { list-style-type: thai; }
 div.thai-alphabetic-parentheses-list ol { list-style-type: thai-alphabetic-parentheses; }
 div.thai-numeric-parentheses-list ol { list-style-type: thai-numeric-parentheses; }
 
+ol.thai-numeric-parentheses-list { list-style-type: thai-numeric-parentheses; }
+ol.inline { display: inline-block; }
+
 .diff { text-decoration: underline currentColor wavy 1px; text-underline-offset: 0.1em; }
 .ex-header { font-size: 0.8em; }
 .big { font-size: 2em; }
