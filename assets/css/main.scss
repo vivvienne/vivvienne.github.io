@@ -45,9 +45,10 @@ ol.inline { display: inline-block; vertical-align: middle;}
 .source-big { font-size: 1em; } /* ตรงที่ต้นฉบับทำตัวใหญ่ แต่ render แบบปัจจุบันไม่ใหญ่ก็ได้ */
 .underline { text-decoration: underline; text-underline-offset: 0.1em; }
 .title-center, .text-center { text-indent: 0 !important; text-align: center; margin-bottom: 1em; }
+.title-center p, .text-center p { text-indent: 0; }
 .signature-text { text-align: right; }
 .big-space { padding: 0 1.2em; }
-.indent p:first-of-type { text-indent: 0; } /* ย่อหน้าทั้งหมดยกเว้น <p> แรกที่เป็นคำว่า "ตัวอย่าง" */
+blockquote p:first-of-type { text-indent: 0; }
 .math-as-text .katex { font: normal 1em var(--font-display-new-schoolbook); }
 
 .poem { position: relative; } /* ทำให้บทกวีทั้งหมดเป็นก้อนสี่เหลี่ยม ลอยอยู่กลางหน้า */

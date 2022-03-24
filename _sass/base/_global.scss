@@ -148,8 +148,8 @@ blockquote {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-blockquote *:last-child,
-footer *:last-child {
+blockquote > *:last-child,
+footer > *:last-child {
   margin-bottom: 0;
 }
 
