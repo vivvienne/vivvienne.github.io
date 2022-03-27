@@ -81,8 +81,14 @@ h2, h3 { text-align: center; }*/
 .emph { font-family: 'Old Standard', 'ArdeaORN'; }
 .small { font-size: 0.75em; }
 
-.word { font-family: 'Old Standard', 'ArdeaORN'; }
-.pos, .dom, .dict-meta { font-family: 'Old Standard', 'ArdeaORN'; font-size: 0.75em;}
-.ety { font-family: 'Old Standard', 'ArdeaORN'; }
+.word, .pos, .dom, .ety, .also { font-family: 'Old Standard', 'ArdeaORN'; }
+.pos, .dom, .ety, .also { font-size: 0.75em;}
+.word { color: #ffbb00; }
+.pos { color: #ff2975; }
+.dom { color: #5da3a6; }
+.ety { color: #378805; }
+.dict-meta { color: #ef9af2; }
+.also { color: #ff901f; }
+.ref { background: linear-gradient(transparent 75%, #ffbb0080 75%); }
 .ambi { color: red; }
 .word:first-of-type { margin-left: -1em; } /* ให้คำตั้งในส่วนพจนานุกรมมี overhang */
