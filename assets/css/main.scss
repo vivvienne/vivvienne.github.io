@@ -42,11 +42,11 @@ li blockquote p { display: block; }
 blockquote ol { margin-left: 3em; }
 hr { width: 30%; margin-left: 35%; }
 
-ol.thai-numeral-list { list-style-type: thai; }
+ol.thai-numeral { list-style-type: thai; }
 ol.thai-alphabetic { list-style-type: thai-alphabetic; }
-ol.thai-alphabetic-parentheses-list { list-style-type: thai-alphabetic-parentheses; }
-ol.thai-numeric-parentheses-list { list-style-type: thai-numeric-parentheses; }
-ol.inline { display: inline-block; vertical-align: middle;}
+ol.thai-alphabetic-parentheses { list-style-type: thai-alphabetic-parentheses; }
+ol.thai-numeric-parentheses { list-style-type: thai-numeric-parentheses; }
+ol.inline { display: inline-block; vertical-align: middle; }
 
 /* สำหรับ "เครื่องหมายวรรคตอน (2474)" */
 .diff { text-decoration: underline currentColor wavy 1px; text-underline-offset: 0.1em; }
@@ -81,7 +81,7 @@ h2, h3 { text-align: center; }*/
 .small { font-size: 0.75em; }
 
 .word { font-family: 'Old Standard', 'ArdeaORN'; }
-.pos, .dom, .meta { font-family: 'Old Standard', 'ArdeaORN'; font-size: 0.75em;}
+.pos, .dom, .dict-meta { font-family: 'Old Standard', 'ArdeaORN'; font-size: 0.75em;}
 .ety { font-family: 'Old Standard', 'ArdeaORN'; }
 .ambi { color: red; }
 .word:first-of-type { margin-left: -1em; } /* ให้คำตั้งในส่วนพจนานุกรมมี overhang */
