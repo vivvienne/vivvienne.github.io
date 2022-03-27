@@ -3,12 +3,20 @@
 
 @import "type-on-strap";
 
+@counter-style thai-alphabetic {
+	system: alphabetic;
+	symbols: '\E01' '\E02' '\E04' '\E07' '\E08' '\E09' '\E0A' '\E0B' '\E0C' '\E0D' '\E0E' '\E0F' '\E10' '\E11' '\E12' '\E13' '\E14' '\E15' '\E16' '\E17' '\E18' '\E19' '\E1A' '\E1B' '\E1C' '\E1D' '\E1E' '\E1F' '\E20' '\E21' '\E22' '\E23' '\E25' '\E27' '\E28' '\E29' '\E2A' '\E2B' '\E2C' '\E2D' '\E2E'; /* symbols: 'ก' 'ข' 'ค' 'ง' 'จ' 'ฉ' 'ช' 'ซ' 'ฌ' 'ญ' 'ฎ' 'ฏ' 'ฐ' 'ฑ' 'ฒ' 'ณ' 'ด' 'ต' 'ถ' 'ท' 'ธ' 'น' 'บ' 'ป' 'ผ' 'ฝ' 'พ' 'ฟ' 'ภ' 'ม' 'ย' 'ร' 'ล' 'ว' 'ศ' 'ษ' 'ส' 'ห' 'ฬ' 'อ' 'ฮ'; */
+}
+@counter-style thai-alphabetic-old {
+	system: alphabetic;
+	symbols: '\E01' '\E02' '\E04' '\E06' '\E07' '\E08' '\E09' '\E0A' '\E0B' '\E0C' '\E0D' '\E0E' '\E0F' '\E10' '\E11' '\E12' '\E13' '\E14' '\E15' '\E16' '\E17' '\E18' '\E19' '\E1A' '\E1B' '\E1C' '\E1D' '\E1E' '\E1F' '\E20' '\E21' '\E22' '\E23' '\E25' '\E27' '\E28' '\E29' '\E2A' '\E2B' '\E2C' '\E2D' '\E2E'; /* symbols: 'ก' 'ข' 'ค' 'ฆ' 'ง' 'จ' 'ฉ' 'ช' 'ซ' 'ฌ' 'ญ' 'ฎ' 'ฏ' 'ฐ' 'ฑ' 'ฒ' 'ณ' 'ด' 'ต' 'ถ' 'ท' 'ธ' 'น' 'บ' 'ป' 'ผ' 'ฝ' 'พ' 'ฟ' 'ภ' 'ม' 'ย' 'ร' 'ล' 'ว' 'ศ' 'ษ' 'ส' 'ห' 'ฬ' 'อ' 'ฮ'; */
+}
 @counter-style thai-alphabetic-parentheses {
 	system: alphabetic;
 	symbols: '\E01' '\E02' '\E04' '\E06' '\E07' '\E08' '\E09' '\E0A' '\E0B' '\E0C' '\E0D' '\E0E' '\E0F' '\E10' '\E11' '\E12' '\E13' '\E14' '\E15' '\E16' '\E17' '\E18' '\E19' '\E1A' '\E1B' '\E1C' '\E1D' '\E1E' '\E1F' '\E20' '\E21' '\E22' '\E23' '\E25' '\E27' '\E28' '\E29' '\E2A' '\E2B' '\E2C' '\E2D' '\E2E'; /* symbols: 'ก' 'ข' 'ค' 'ฆ' 'ง' 'จ' 'ฉ' 'ช' 'ซ' 'ฌ' 'ญ' 'ฎ' 'ฏ' 'ฐ' 'ฑ' 'ฒ' 'ณ' 'ด' 'ต' 'ถ' 'ท' 'ธ' 'น' 'บ' 'ป' 'ผ' 'ฝ' 'พ' 'ฟ' 'ภ' 'ม' 'ย' 'ร' 'ล' 'ว' 'ศ' 'ษ' 'ส' 'ห' 'ฬ' 'อ' 'ฮ'; */
 	prefix: '(';
 	suffix: ') ';
-	}
+}
 @counter-style thai-numeric-parentheses {
 	system: numeric;
 	symbols: '๐' '๑' '๒' '๓' '๔' '๕' '๖' '๗' '๘' '๙';
@@ -35,10 +43,12 @@ blockquote ol { margin-left: 3em; }
 hr { width: 30%; margin-left: 35%; }
 
 ol.thai-numeral-list { list-style-type: thai; }
+ol.thai-alphabetic { list-style-type: thai-alphabetic; }
 ol.thai-alphabetic-parentheses-list { list-style-type: thai-alphabetic-parentheses; }
 ol.thai-numeric-parentheses-list { list-style-type: thai-numeric-parentheses; }
 ol.inline { display: inline-block; vertical-align: middle;}
 
+/* สำหรับ "เครื่องหมายวรรคตอน (2474)" */
 .diff { text-decoration: underline currentColor wavy 1px; text-underline-offset: 0.1em; }
 .ex-header { font-size: 0.8em; }
 .big { font-size: 2em; }
@@ -63,3 +73,15 @@ h2, h3 { text-align: center; }*/
 .poem.last .stanza .line:last-of-type .wak:last-of-type::after { content: '๚'; margin-left: 1.5em; }
 .poem p { margin: 0; }
 .poem * { line-height: 2.25; }
+
+/* for RI2493 */
+.center { text-align: center; }
+.right { text-align: right; }
+.emph { font-family: 'Old Standard', 'ArdeaORN'; }
+.small { font-size: 0.75em; }
+
+.word { font-family: 'Old Standard', 'ArdeaORN'; }
+.pos, .dom, .meta { font-family: 'Old Standard', 'ArdeaORN'; font-size: 0.75em;}
+.ety { font-family: 'Old Standard', 'ArdeaORN'; }
+.ambi { color: red; }
+.word:first-of-type { margin-left: -1em; } /* ให้คำตั้งในส่วนพจนานุกรมมี overhang */
